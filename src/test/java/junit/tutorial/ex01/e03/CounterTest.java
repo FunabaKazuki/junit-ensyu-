@@ -1,4 +1,4 @@
-package junit.tutorial.ex01.e02;
+package junit.tutorial.ex01.e03;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class CalculatorTest {
+class CounterTest {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -28,8 +28,7 @@ class CalculatorTest {
 
 	@Test
 	void test() {
-		Calculator target = new Calculator();
-		assertThrows(IllegalArgumentException.class, () -> target.divide(5, 0));
+		fail("Not yet implemented");
 	}
 
 }
