@@ -21,14 +21,33 @@ class CounterTest {
 	@BeforeEach
 	void setUp() throws Exception {
 	}
+	Counter counter = new Counter();
 
 	@AfterEach
 	void tearDown() throws Exception {
 	}
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void test1() {
+		
+		assertEquals(1, counter.increment());
 	}
+	
+	@Test
+	void test2() {
+		
+		counter.increment();
+		assertEquals(2, counter.increment());
+	}
+	
+	@Test
+	void test3() {
+		
+		for(int i=1;i<=50;i++) {
+			counter.increment();
+		}
+		assertEquals(51, counter.increment());
+	}
+
 
 }

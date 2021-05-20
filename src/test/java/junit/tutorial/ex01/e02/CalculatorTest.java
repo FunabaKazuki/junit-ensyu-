@@ -9,6 +9,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class CalculatorTest {
+	
+	Calculator target = new Calculator();
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -20,6 +22,7 @@ class CalculatorTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		
 	}
 
 	@AfterEach
@@ -28,7 +31,7 @@ class CalculatorTest {
 
 	@Test
 	void test() {
-		Calculator target = new Calculator();
+		
 		assertThrows(IllegalArgumentException.class, () -> target.divide(5, 0));
 	}
 
