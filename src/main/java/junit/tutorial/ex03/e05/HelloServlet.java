@@ -1,7 +1,7 @@
 package junit.tutorial.ex03.e05;
 
 import java.io.IOException;
-
+/*
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,4 +19,4 @@ public class HelloServlet extends HttpServlet {
 		resp.flushBuffer();
 	}
 
-}
+}*/
